@@ -1,0 +1,5 @@
+language: rust
+install:
+    - cargo install mdbook
+script:
+    - ~/.cargo/bin/mdbook build
