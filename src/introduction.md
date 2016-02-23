@@ -10,3 +10,22 @@ kümmert steht nicht fest.
 
 Aktuell werden Inhalte von Fabian Pieper und Jesse Stricker erstellt, welche
 auf der Arbeit mit dem Raspberry Pi im Unterricht basieren.
+
+Auf dieser Seite finden sich alle **Tutorials und Anleitungen**, die im
+Unterricht entstanden sind.
+
+## Für Einsteiger
+
+Schüler, die den Raspberry Pi zum ersten Mal verwenden, sollten dieser
+Dokumenatation von Anfang bis Ende folgen, um einen möglichst einfachen Einstieg
+in das Thema zu bekommen.
+
+Es wird sich zu erst mit dem Einrichten des Raspberry Pi beschäftigt, bevor es
+mit Texten zu den Grundlagen weiter geht.  
+Wenn dann ein gewisses Grundverständnis vorhanden ist, können die Tutorials
+bearbeitet werden.
+
+## Für Fortgeschrittene
+
+Wer in dem Umgang mit dem Raspberry Pi schon geübter ist, kann sich direkt an
+die Tutorials setzen. In dem Fall ist ein Grundwissen von C++ benötigt.
