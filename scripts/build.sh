@@ -7,7 +7,7 @@ else
     echo "downloading mdbook"
     cargo install mdbook
     mkdir -p "$WERCKER_CACHE_DIR/cargo"
-    cp "~/.cargo/bin/mdbook" "$WERCKER_CACHE_DIR/cargo/mdbook"
+    cp "/root/.cargo/bin/mdbook" "$WERCKER_CACHE_DIR/cargo/mdbook"
 fi
 
 echo "building the book"
