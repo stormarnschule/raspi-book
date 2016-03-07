@@ -37,3 +37,14 @@ Wenn man nun im Browser auf die Webseite
 [**stormarnschule.github.io/raspi-book**](http://stormarnschule.github.io/raspi-book)
 geht, sendet GitHub eben jenen HTML-Code, der im gh-pages Zweig liegt an den 
 WebBrowser.
+
+## Bilder
+
+Die Bilder sind alle im PNG Format, dies bietet die beste Qualität bei kleiner
+Dateigröße. Im Gegensatz zu JPG sieht man keine Pixelfehler oder "Krisel".
+
+Alle Bilder wurden auf eine Breite von `750 px` skaliert, so passen sie genau
+auf eine Seite, ohne vom Browser verkleinert werden zu müssen. Außerdem benutzen
+einige Bilder [Adam7](https://de.wikipedia.org/wiki/Adam7), ein Algorithmus der
+während es Herunterladens das Bild verfeinert.  
+Die Verwendung von Adam7 ist von uns **empfohlen**!
