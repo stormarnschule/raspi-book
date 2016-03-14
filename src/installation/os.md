@@ -10,6 +10,8 @@ sollten:
 
 Das Betriebsystem des Raspberry Pis ist eine angepasste Linux-Distribution, die von dem
 populärem [Debian](https://www.debian.org) abstammt, daher auch der Name "Raspbian".
+Wir nutzen die "Raspbian Lite", eine minimale Version ohne Desktopoberfläche, nur mit
+Eingabeaufforderung.
 
 ## Download
 
@@ -17,7 +19,7 @@ Als erstes muss das Datenträgerabbild von der Raspberry Pi Webseite heruntergel
 Ihr findet es [auf der Downloadseite](https://www.raspberrypi.org/downloads/raspbian/).
 Am Besten ladet ihr immer das Aktuellste herunter, wenn ihr einen Pi neu aufsetzt, dieses
 seht ihr auf der linken Seite:
-__[Direktlink](https://downloads.raspberrypi.org/raspbian_latest)__
+__[Direktlink](https://downloads.raspberrypi.org/raspbian_lite_latest)__
 
 Nach dem ihr die ZIP-Datei heruntergeladen habt, müsst ihr diese entpacken: Ihr erhaltet
 eine __.IMG__ Datei, das Datenträgerabbild.
