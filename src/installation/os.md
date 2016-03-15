@@ -10,7 +10,7 @@ sollten:
 
 Das Betriebsystem des Raspberry Pis ist eine angepasste Linux-Distribution, die von dem
 populärem [Debian](https://www.debian.org) abstammt, daher auch der Name "Raspbian".
-Wir nutzen die "Raspbian Lite", eine minimale Version ohne Desktopoberfläche, nur mit
+Wir nutzen "Raspbian Lite", eine minimale Version ohne Desktopoberfläche, nur mit
 Eingabeaufforderung.
 
 ## Download
@@ -51,7 +51,7 @@ Wartet nun, bis der Schreibvorgang fertig abgeschlossen wurde.
 
 Steckt die SD-Karte, ein Netzwerkkabel und das Stromkabel in euren Pi und bootet.
 Hat Alles funktioniert, könnt ihr nach ein paar Sekunden euch über SSH mit eurem
-Raspberry Pi verbinden. Wie das geht, steht hier: __[SSH Verbindung]({{< ref "setup/ssh.md" >}})__
+Raspberry Pi verbinden. Wie das geht, steht hier: [SSH-Verbindung](introduction/ssh.html).
 
 ```
 Benutzer: pi
@@ -66,7 +66,8 @@ sudo -i
 
 Update der Software auf dem Pi (kann eine Weile dauern):
 ```
-apt-get -y update && apt-get -y upgrade
+apt-get update -y && apt-get upgrade -y
+apt-get install -y git
 ```
 
 Konfigurieren mit "raspi-config":
