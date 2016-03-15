@@ -12,12 +12,13 @@ Um sie zu installieren, führt ihr folgendes in der Konsole aus.
 
 ```
 # Ordner erstellen
-mkdir -p ~/libs
-cd ~/libs
+cd ~
+mkdir libs
+cd libs
 
 # Download und Entpacken
 wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.46.tar.gz
-tar -xzvf bcm2835-1.46.tar.gz
+tar xzvf bcm2835-1.46.tar.gz
 cd bcm2835-1.46
 
 # Konfigurieren, Kompilieren, Installieren
