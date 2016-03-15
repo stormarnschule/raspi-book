@@ -9,6 +9,10 @@ Auf die Output Pins B1-B3 müssen Jumper gesetzt werden. Dies ermöglicht eine
 Ausgabe des Gertboardboard ausgelöst durch die Taster. Außerdem müssen die GPIO
 Pins 25 mit B1, 24 mit B2 und 23 mit B1 verbunden werden.
 
+Dies sieht dann ungefähr so aus:
+
+![Gertboard Anschlüsse](img/gertboard_buttons.jpg)
+
 ## Das Programm
 
 Euer Programm soll nun den Status der Buttons anzeigen. Hierbei sollt ihr alle
