@@ -1,6 +1,7 @@
 # Summary
 
-- [Einführung](introduction.md)
+- [Einführung](introduction/index.md)
+    - [SSH-Verbindung](introduction/ssh.md)
 - [Installation](installation/index.md)
     - [Betriebssystem](installation/os.md)
     - [Software](installation/software.md)
