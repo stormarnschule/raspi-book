@@ -19,7 +19,6 @@
         - [Lichtorgel + Taster](tutorials/gertboard/lights-buttons.md)
     - [LCD](tutorials/lcd/index.md)
         - [Spiel: Snake](tutorials/lcd/snake.md)
-        - [Spiel: SpaceInvader](tutorials/lcd/space-invader.md)
         
 ----------
 
