@@ -29,3 +29,12 @@ bearbeitet werden.
 
 Wer in dem Umgang mit dem Raspberry Pi schon geübter ist, kann sich direkt an
 die Tutorials setzen. In dem Fall ist ein Grundwissen von C++ benötigt.
+
+## Für zur Dokumentation Beitragende
+
+Für Euch findet sich unter dem Appendix [Meta](meta.html) eine Zusammenfassung,
+wie diese Dokumentation ensteht und welche Werkzeuge dafür verwendet werden.
+
+Bitte lest sie euch vorher durch, damit der Stil der Dokumentation möglichst
+konstant bleibt. Danke.
+
