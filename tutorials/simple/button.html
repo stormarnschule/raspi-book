@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>RPi Dokumentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Raspberry Pi - Dokumentation von der Stormarnschule">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="../../">
+
+        <link rel="stylesheet" href="book.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+
+        <!-- MathJax -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li><a href="introduction/index.html"><strong>1.</strong> Einführung</a></li><li><ul class="section"><li><a href="introduction/ssh.html"><strong>1.1.</strong> SSH-Verbindung</a></li></ul></li><li><a href="installation/index.html"><strong>2.</strong> Installation</a></li><li><ul class="section"><li><a href="installation/os.html"><strong>2.1.</strong> Betriebssystem</a></li><li><a href="installation/software.html"><strong>2.2.</strong> Software</a></li></ul></li><li><a href="basics/index.html"><strong>3.</strong> Grundlagen</a></li><li><ul class="section"><li><a href="basics/rpi.html"><strong>3.1.</strong> Raspberry Pi</a></li><li><a href="basics/gpio.html"><strong>3.2.</strong> GPIO</a></li><li><a href="basics/gertboard.html"><strong>3.3.</strong> Gertboard</a></li></ul></li><li><a href="tutorials/index.html"><strong>4.</strong> Tutorials</a></li><li><ul class="section"><li><a href="tutorials/simple/index.html"><strong>4.1.</strong> Einfach</a></li><li><ul class="section"><li><a href="tutorials/simple/led.html"><strong>4.1.1.</strong> LED</a></li><li><a href="tutorials/simple/button.html" class="active"><strong>4.1.2.</strong> Taster</a></li></ul></li><li><a href="tutorials/gertboard/index.html"><strong>4.2.</strong> Gertboard</a></li><li><ul class="section"><li><a href="tutorials/gertboard/lights.html"><strong>4.2.1.</strong> Lichtorgel</a></li><li><a href="tutorials/gertboard/buttons.html"><strong>4.2.2.</strong> Taster</a></li><li><a href="tutorials/gertboard/lights-buttons.html"><strong>4.2.3.</strong> Lichtorgel + Taster</a></li></ul></li><li><a href="tutorials/lcd/index.html"><strong>4.3.</strong> LCD</a></li><li><ul class="section"><li><a href="tutorials/lcd/snake.html"><strong>4.3.1.</strong> Spiel: Snake</a></li><li class="spacer"></li></ul></li></ul></li><li><a href="meta.html">Meta</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title">RPi Dokumentation</h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <h1>Taster</h1>
+<h2>Setup</h2>
+<p>Bei diesem Tutorial soll eine LED über einen Button angeschaltet werden. Auf Knopfdruck, soll diese so zum Aufleuchten gebracht werden. Wird der Taster wieder losgelassen soll die LED erlöschen. Hierfür wird wie beim Simple-LED Tutorial ein Schaltboard benötigt. Auf diesem werden zwei Stromkreise installiert. Der eine soll die LED mitsamt Widerstand enthalten. Der andere Stromkreis enthält den Button. (Die Funktionsweise lässt sich auch mit einem Stromkreis ohne Programm umsetzen, erfüllt jedoch nicht die Vorraussetzungen, welche für die nächsten Tutorials benötigt werden.) Beide Stromkreise werden jeweils einem GPIO-Pin zugeordnet und mit dem Grund verbunden (In der Lösung wurden der Pin 14 für den Button und Pin 15 für die LED genutzt).</p>
+<p><img src="img/simple_button_board.png" alt="Button Schaltboard" />
+<img src="img/simple_button_pins.png" alt="Button Pins" /></p>
+<h2>Das Programm</h2>
+<p>Euer Programm soll über den Button Pin den Status des Knopfdruckes abfragen und je nach diesem die LED über den LED-Pin aufleuchten bzw. nicht aufleuchten lassen.</p>
+<h2>Tipps</h2>
+<h3>1.</h3>
+<p>Über while-Schleifen kann dauerhaft die Status des Buttons geprüft werden. Zum Abfragen könnt ihr die Methode <code>state()</code> nutzen.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="tutorials/simple/led.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="tutorials/gertboard/index.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="tutorials/simple/led.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="tutorials/gertboard/index.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+    </body>
+</html>
